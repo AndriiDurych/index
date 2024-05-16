@@ -1,0 +1,32 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px auto 50px;
+    grid-gap: 10px;
+    }
+.grid-item {
+    padding: 10px;
+    border: 2px solid #fff;
+    }
+.header {
+    background-color: #f2f2f2;
+    text-align: left;
+    grid-column: span 2;
+    }
+.sidebar {
+    background-color: #d1d1d1;
+    }
+.footer {
+    background-color: #d1d1d1;
+    text-align: width;
+    grid-column: span 2;
+    }
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    }
+h2 {
+    text-align: center;
+    }
