@@ -2,13 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" type="text/css" href="style_index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+     <script src="my-script.js"></script>
+    <style>
+        #colorTextBlock {
+            width: 200px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .new-element {
+            width: 200px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 <div class="grid-container">
-    <div class="grid-item header"><h1>Змія</h1></div>
+    <div id="colorTextBlock" class="grid-item header"><h1>Змія</h1></div>
+    <button id="addElementButton">Додати змійку</button>
+    <div id="container"></div>
     <div class="grid-item header">
         <h2 class="display-6">Змі́ї (Serpentes) — підряд плазунів ряду лускатих. Близько чверті видів — отруйні.</h2>
     </div>
@@ -35,6 +61,13 @@
     <div class="text-center">
     <img src="images.jfif" class="rounded" alt="Тут має бути змія">
     </div>
+    <select class="form-select" aria-label="Default select example">
+    <option selected>Виберіть розділ</option>
+     <option value="1">Перший</option>
+     <option value="2">Другий</option>
+     <option value="3">Третій</option>
+    </select>
+
     <div class="grid-item footer">
     <h4>
         <p>Загальна довжина представників цього роду коливається
@@ -51,5 +84,18 @@
     </h4>
     </div>
 </div>
+<form class="row g-3">
+  <div class="col-auto">
+    <label for="staticEmail2" class="visually-hidden">Email</label>
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+  </div>
+  <div class="col-auto">
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+  </div>
+</form>
 </body>
 </html>
